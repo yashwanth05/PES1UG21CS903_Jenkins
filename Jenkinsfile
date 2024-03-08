@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 build 'PES1UG21CS903-1'
-                sh 'g+ main.cpp -o output'
+                sh 'g++ main.cpp -o output'
             }
         }
         stage('Test') {
@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'deploy'
+                echo 'eploy'
                 // Assuming you have deployment steps here. Adjust accordingly.
             }
         }
