@@ -15,12 +15,12 @@ pipeline {
         stage('Test') {
             steps {
                 // Assuming you have test steps here. Adjust accordingly.
-                sh './output'
+                sh '.output'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'eploy'
+                echo 'deploy'
                 // Assuming you have deployment steps here. Adjust accordingly.
             }
         }
